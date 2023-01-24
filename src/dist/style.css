@@ -407,3 +407,14 @@
 .overlay {
   display: none;
 }
+
+.pageup {
+  display: block;
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  width: 70px;
+}
+.pageup img {
+  width: 100%;
+}
