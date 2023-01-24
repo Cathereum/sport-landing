@@ -1,11 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=MuseoModerno:wght@300;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
 
 /* Reset and base styles  */
 * {
   padding: 0px;
   margin: 0px;
   border: none;
-  font-family: "MuseoModerno", cursive;
+  font-family: "Roboto", sans-serif;
 }
 
 *,
@@ -243,5 +243,151 @@
     width: 100%;
     width: 300px;
     height: 55px;
+  }
+}
+
+.catalog {
+  .container {
+    padding: 81px 0 79px 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  h2 {
+    font-weight: 400;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #0d0d0d;
+  }
+  .catalog__tabs {
+    margin-top: 46px;
+    list-style-type: none;
+    display: flex;
+    gap: 10px;
+    .catalog__tabs-item {
+      width: 222px;
+      height: 52px;
+      background: rgba(0, 0, 0, 0.0001);
+      border: 2px solid #d0d0d0;
+
+      font-weight: 400;
+      font-size: 18px;
+      text-transform: uppercase;
+      color: #6b6b6b;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      transform: skewX(-20deg);
+
+      margin-bottom: 0px;
+      padding-left: 0px;
+
+      cursor: pointer;
+
+      transition: 0.5s all;
+      &:hover {
+        box-shadow: 3px 3px 1px #c70101;
+      }
+
+      span {
+        transform: skewX(20deg);
+      }
+    }
+    .tabs-item_active {
+      width: 220px;
+      height: 50px;
+      background: #c70101;
+      border: none;
+      color: #ffffff;
+    }
+  }
+
+  .catalog__content {
+    margin-top: 57px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 17px;
+
+    .catalog-item {
+      padding: 20px 18px 21px 23px;
+      align-items: center;
+      text-align: center;
+
+      width: 303px;
+      height: 442px;
+
+      background: #ffffff;
+      border: 2px solid #e8e8e8;
+
+      ul {
+        text-align: start;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 21px;
+        color: #555555;
+        margin-bottom: 102px;
+      }
+
+      hr {
+        margin-bottom: 19px;
+        width: 263px;
+        height: 4px;
+        background: #e8e8e8;
+        margin-top: 5px;
+      }
+
+      h2 {
+        font-weight: 700;
+        font-size: 16px;
+        color: #0d0d0d;
+        margin-bottom: 15px;
+      }
+
+      p {
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 22px;
+        color: #0d0d0d;
+        margin-bottom: 10px;
+      }
+
+      a {
+        margin-bottom: 17px;
+        font-weight: 500;
+        font-size: 14px;
+        align-items: flex-end;
+        text-align: center;
+        text-decoration-line: underline;
+        color: #c70101;
+      }
+
+      .catalog-item__footer {
+        display: flex;
+        justify-content: space-between;
+        .catalog-item__price {
+          .old-price {
+            font-weight: 300;
+            font-size: 14px;
+            text-decoration-line: line-through;
+            color: #555555;
+          }
+
+          .new-price {
+            font-weight: 700;
+            font-size: 20px;
+            color: #050505;
+          }
+        }
+
+        .button {
+          width: 131px;
+          height: 40px;
+          background: #c70101;
+        }
+      }
+    }
   }
 }
