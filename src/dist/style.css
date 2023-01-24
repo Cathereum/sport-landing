@@ -367,3 +367,43 @@
   height: 52px;
   margin-top: 36px;
 }
+
+.overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.overlay .modal {
+  position: relative;
+  width: 380px;
+  min-height: 400px;
+  background-color: #dbd8d8;
+  padding: 40px 40px;
+}
+.overlay .modal .button {
+  width: 100%;
+}
+.overlay .modal .modal__close {
+  position: absolute;
+  top: -47px;
+  right: -47px;
+  font-size: 61px;
+  color: red;
+  cursor: pointer;
+}
+.overlay #thanks {
+  min-height: 100px;
+}
+
+#consultation,
+#order,
+#thanks,
+.overlay {
+  display: none;
+}
